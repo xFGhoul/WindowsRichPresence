@@ -7,6 +7,8 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+set(BUILD_SHARED_LIBS OFF)
+
 # -- FETCH CPR --------------------------------------------------------------
 set(CPR_BUILD_TESTS_SSL OFF)
 set(CPR_BUILD_TESTS OFF)
@@ -28,6 +30,6 @@ endif()
 add_executable(WindowsRichPresence main.cpp)
 target_link_libraries(
     ${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/RichPresence/libs/discord-rpc.lib" 
-    PRIVATE cpr::cpr PRIVATE #ftxui::screen PRIVATE ftxui::dom
+    PRIVATE cpr::cpr PRIVATE ftxui::screen PRIVATE ftxui::dom
     )
 

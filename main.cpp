@@ -10,7 +10,6 @@ Update* Updater;
 
 // Main Program
 
-// TODO: Try Fixing FTXUI(https://github.com/ArthurSonzogni/FTXUI/issues/263)
 // TODO: Build A Menu(For Settings And Handling RPC) Using FTXUI or Tabulate
 // TODO: System Tray
 // TODO: App Icon
